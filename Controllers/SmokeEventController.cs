@@ -31,15 +31,6 @@ public class SomkeEventController : ControllerBase
         _mapper = mapper;
     }
 
-    // POST api/smokeevent
-    // [HttpPost]
-    // [ProducesResponseType(StatusCodes.Status201Created)]
-    // public void Post([FromBody] SmokeEventDto model)
-    // {
-    //     // Add smoke event to database then send message to clients
-    //     _hubContext.Clients.All.SmokeIncident("Alert! A smoke has been detected");
-    // }
-
     [HttpGet("id")]
     [ProducesResponseType(typeof(SmokeEventDto), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
